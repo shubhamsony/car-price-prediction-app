@@ -1,4 +1,3 @@
-# S6.1: Design the View Data page of the multipage app.
 # Import necessary modules
 import streamlit as st
 import numpy as np  
@@ -9,7 +8,6 @@ def app(car_df):
   with st.beta_expander("View Dataset"):
     st.table(car_df)
 
-# S6.2: Design the View Data page of the multipage app.
 # Import necessary modules
 import numpy as np  
 import pandas as pd
@@ -25,7 +23,7 @@ def app(car_df):
     if st.checkbox("Show summary"):
       st.table(car_df.describe())
 
-# S6.3: Divide the web page into three columns to add more widgets.
+#  Divide the web page into three columns to add more widgets.
 def app(car_df):
     # Displaying orginal dataset
     st.header("View Data")
@@ -38,7 +36,6 @@ def app(car_df):
     if st.checkbox("Show summary"):
         st.table(car_df.describe())    
     
-    # ADD NEW CODE FROM HERE
     beta_column1,beta_column2,beta_column3=st.beta_columns(3)
     with beta_column1:
       if st.checkbox("Show all columns names "):
