@@ -1,4 +1,3 @@
-# S1.1: Design the "Visualise Data" page of the multipage app.
 # Import necessary modules 
 import streamlit as st
 import matplotlib.pyplot as plt
